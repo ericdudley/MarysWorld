@@ -18,17 +18,17 @@ class Player:
         self.sprites[PlayerState.IDLE] = []
         for i in range(4):
             self.sprites[PlayerState.IDLE].append(pygame.image.load(
-                os.path.join('img', 'player', 'sprites', 'adventurer-idle-2-0' + str(i) + '.png')))
+                os.path.join('img', 'player', 'sprites', 'adventurer-idle-2-0' + str(i) + '.png')).convert())
 
         self.sprites[PlayerState.MOVE] = []
         for i in range(6):
             self.sprites[PlayerState.MOVE].append(pygame.image.load(
-                os.path.join('img', 'player', 'sprites', 'adventurer-run-0' + str(i) + '.png')))
+                os.path.join('img', 'player', 'sprites', 'adventurer-run-0' + str(i) + '.png')).convert())
 
         self.sprites[PlayerState.JUMP] = []
         for i in range(3):
             self.sprites[PlayerState.JUMP].append(pygame.image.load(
-                os.path.join('img', 'player', 'sprites', 'adventurer-crnr-jmp-0' + str(i) + '.png')))
+                os.path.join('img', 'player', 'sprites', 'adventurer-crnr-jmp-0' + str(i) + '.png')).convert())
 
         self.sprite_index = 0
         self.last_sprite_index_change = 0
