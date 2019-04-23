@@ -9,7 +9,7 @@ def main():
 
     pygame.init()
 
-    logo = pygame.image.load(os.path.join('img', 'logo.png'))
+    logo = pygame.image.load(os.path.join("img", "logo.png"))
     pygame.display.set_icon(logo)
     pygame.display.set_caption("Mary's World")
 
